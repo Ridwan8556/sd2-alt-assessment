@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    title Students
+  body
+    h1 Students
+    if rows && rows.length
+      ul
+        each s in rows
+          li #{s.id}. #{s.name} (#{s.age})
+    else
+      p No students found.
